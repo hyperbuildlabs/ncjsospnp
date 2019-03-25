@@ -31,7 +31,7 @@
     <framework src="build-extras-ncjsospnp.gradle" custom="true" type="gradleReference" />
     
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="OneSignalPush" >
+      <feature name="Ncjsospnp" >
         <param name="android-package" value="com.plugin.gcm.Ncjsospnp" />
       </feature>
     </config-file>
@@ -63,8 +63,8 @@
   <platform name="ios">
 
     <config-file target="config.xml" parent="/*">
-      <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush"/>
+      <feature name="Ncjsospnp">
+        <param name="ios-package" value="Ncjsospnp"/>
         </feature>
     </config-file>
 
@@ -92,12 +92,12 @@
   <!-- Windows Phone 8.1 -->
   <platform name="windows">
     <config-file target="config.xml" parent="/*">
-      <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush"/>
+      <feature name="Ncjsospnp">
+        <param name="ios-package" value="Ncjsospnp"/>
       </feature>
     </config-file>
     
-    <js-module src="src/windows/Ncjsospnp.js" name="OneSignalPushProxy">
+    <js-module src="src/windows/Ncjsospnp.js" name="Ncjsospnp">
       <merges target="" />
     </js-module>
     

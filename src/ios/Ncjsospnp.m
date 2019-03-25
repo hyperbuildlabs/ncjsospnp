@@ -28,7 +28,7 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
-#import "OneSignalPush.h"
+#import "Ncjsospnp.h"
 #import <OneSignal/OneSignal.h>
 
 NSString* notficationReceivedCallbackId;
