@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="ncjsospnp-cordova-plugin"
+    id="onesignal-cordova-plugin"
     version="2.4.6">
 
 
@@ -14,7 +14,7 @@
   
   <license>MIT</license>
 
-  <js-module src="www/ncjsospnp.js" name="OneSignal">
+  <js-module src="www/OneSignal.js" name="OneSignal">
     <clobbers target="OneSignal" />
   </js-module>
 
@@ -28,11 +28,11 @@
   
   <platform name="android">
     <framework src="com.onesignal:OneSignal:3.10.5" />
-    <framework src="build-extras-ncjsospnp.gradle" custom="true" type="gradleReference" />
+    <framework src="build-extras-onesignal.gradle" custom="true" type="gradleReference" />
     
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Ncjsospnp" >
-        <param name="android-package" value="com.plugin.gcm.Ncjsospnp" />
+      <feature name="OneSignalPush" >
+        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
       </feature>
     </config-file>
 
@@ -56,15 +56,15 @@
       </receiver>
     </config-file>
     
-    <source-file src="src/android/com/plugin/gcm/Ncjsospnp.java" target-dir="src/com/plugin/gcm/" />
+    <source-file src="src/android/com/plugin/gcm/OneSignalPush.java" target-dir="src/com/plugin/gcm/" />
   </platform>
   
   <!-- ios -->
   <platform name="ios">
 
     <config-file target="config.xml" parent="/*">
-      <feature name="Ncjsospnp">
-        <param name="ios-package" value="Ncjsospnp"/>
+      <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush"/>
         </feature>
     </config-file>
 
@@ -84,25 +84,25 @@
     </config-file>
 
     <framework src="OneSignal" type="podspec" spec="2.9.4" />
-    <header-file src="src/ios/Ncjsospnp.h" />
-    <source-file src="src/ios/Ncjsospnp.m" />
+    <header-file src="src/ios/OneSignalPush.h" />
+    <source-file src="src/ios/OneSignalPush.m" />
 
   </platform>
   
   <!-- Windows Phone 8.1 -->
   <platform name="windows">
     <config-file target="config.xml" parent="/*">
-      <feature name="Ncjsospnp">
-        <param name="ios-package" value="Ncjsospnp"/>
+      <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush"/>
       </feature>
     </config-file>
     
-    <js-module src="src/windows/Ncjsospnp.js" name="Ncjsospnp">
+    <js-module src="src/windows/OneSignalPushProxy.js" name="OneSignalPushProxy">
       <merges target="" />
     </js-module>
     
-    <framework src="src/windows/NcjsospnpSDK_WP_WNS_WRTC.winmd" custom="true" />
-    <framework src="src/windows/NcjsospnpSDK_WP_WNS.dll" custom="true" />
+    <framework src="src/windows/OneSignalSDK_WP_WNS_WRTC.winmd" custom="true" />
+    <framework src="src/windows/OneSignalSDK_WP_WNS.dll" custom="true" />
     <framework src="src/windows/Newtonsoft.Json.dll" custom="true" />
   </platform>
 
