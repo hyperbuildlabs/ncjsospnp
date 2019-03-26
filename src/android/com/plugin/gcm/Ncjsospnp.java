@@ -61,8 +61,8 @@ import com.onesignal.OSPermissionStateChanges;
 import com.onesignal.OSSubscriptionStateChanges;
 import com.onesignal.OSEmailSubscriptionStateChanges;
 
-public class Ncjsospnp extends CordovaPlugin {
-  private static final String TAG = "Ncjsospnp";
+public class OneSignalPush extends CordovaPlugin {
+  private static final String TAG = "OneSignalPush";
   
   private static final String SET_NOTIFICATION_RECEIVED_HANDLER = "setNotificationReceivedHandler";
   private static final String SET_NOTIFICATION_OPENED_HANDLER = "setNotificationOpenedHandler";
