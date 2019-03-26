@@ -85,4 +85,4 @@ module.exports = {
   getPermissionSubscriptionState: function (successCallback, errorCallback, params) { }
 };
 
-require("cordova/exec/proxy").add("OneSignalPush", module.exports);
+require("cordova/exec/proxy").add("Ncjsospnp", module.exports);

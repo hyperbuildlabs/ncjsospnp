@@ -159,7 +159,7 @@ static Class delegateClass = nil;
 
 @end
 
-@implementation OneSignalPush
+@implementation Ncjsospnp
 
 - (void)onOSPermissionChanged:(OSPermissionStateChanges*)stateChanges {
     successCallback(permissionObserverCallbackId, [stateChanges toDictionary]);
